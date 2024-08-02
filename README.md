@@ -10,27 +10,20 @@
 终结所有错误设置！让稀奇古怪的套娃设置方法见鬼去吧！  
 
 手把手嘴对嘴指导你将 OpenClash 设置为效率、安全和便利三者兼顾的完美状态，零基础小白也能轻松看懂。  
-按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程，搭配本仓库的[订阅模板](https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)对 OpenClash 进行设置，仅依靠 OpenClash 自身，无需套娃其他工具，即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无第三方插件的广告拦截，并且完美兼容 IPv6。  
+按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程，搭配本仓库的[订阅模板](https://raw.githubusercontent.com/LIMINGRUIQAQ/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)对 OpenClash 进行设置，仅依靠 OpenClash 自身，无需套娃其他工具，即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无第三方插件的广告拦截，并且完美兼容 IPv6。  
 
 欢迎 star ！  
 
 ## 更新  
 本仓库模板包含的规则均为引用的上游规则碎片，上游规则更新与本仓库模板的更新没有直接关系  
 
-2024.7.28  
-换用新的广告拦截设置方法，现在使用 OpenClash 的开发者选项来实现广告屏蔽功能，大幅提升便利性。  
-增加“开发者选项”一键修改脚本，方便小白操作。  
 
-2024.7.7  
-修改完善教程。  
-“Meta 设置”页面的设置有所改变，建议对照教程进行修改。  
+2024.8.2 
+修改模板全英文化， 去除所有Emoji图标，为Glados机场优化模板
 
-2024.6.19  
-教程中上传了一处错误图片，已修正。  
-配置订阅 > 配置文件订阅信息中，请务必停用“使用规则集”功能！  
 
 ## 本仓库教程及订阅转换模板介绍
-本仓库的订阅转换模板是在 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) 规则的订阅模板基础上进行了魔改和完善。
+本仓库的订阅转换模板Fork来自Aethersailod的订阅模板基础上进行了个性化定制。
 以下特性涉及的设置需要按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程对 OpenClash 进行配置才可以实现：  
 * 无需搭配其他插件，实现 DNS 防泄露；  
 * 基于 ACL4SSR_Online_Full 全分组规则魔改，将大部分规则碎片替换成 [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 的规则文件，域名分流信息极为全面，增加更多策略组，覆盖大多数日常使用环境，无需自己折腾；  
@@ -51,6 +44,5 @@
 https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置教程  
 教程非常详尽，只需按部就班设置即可，有手就行！  
 
-此处也提供本仓库订阅模板的单独下载地址：  
-https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini  
-请注意，如果不按照本仓库教程使用，无法保证最终效果，不建议单独使用订阅模板。  
+此处提供自定义订阅模板的单独下载地址：  
+https://raw.githubusercontent.com/LIMINGRUIQAQ/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini
