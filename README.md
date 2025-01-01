@@ -23,12 +23,17 @@
 
 修改模板全英文化， 去除所有Emoji图标，为Glados机场优化模板
 
+ 
+2025.1.1
+
+修改规则顺序，增加分流规则，提供更细化的分流规则
+
 
 ## 本仓库教程及订阅转换模板介绍
 本仓库的订阅转换模板Fork来自Aethersailod的订阅模板基础上进行了个性化定制。
 以下特性涉及的设置需要按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程对 OpenClash 进行配置才可以实现：  
 * 无需搭配其他插件，实现 DNS 防泄露；  
-* 基于 ACL4SSR_Online_Full 全分组规则魔改，将大部分规则碎片替换成 [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 的规则文件，域名分流信息极为全面，增加更多策略组，覆盖大多数日常使用环境，无需自己折腾；  
+* 基于 ACL4SSR_Online_Full 全分组规则，将大部分规则碎片替换成 [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 的规则文件，域名分流信息极为全面，增加更多策略组，覆盖大多数日常使用环境，无需自己折腾；  
 * 支持节点按地区分类测速优选；  
 * 媒体服务（Youtube、Netflix、Disney+ 等）走指定区域测速选优或指定节点，特定网站（电报、ChatGPT 等）走指定区域节点测速选优或指定节点；  
 * 单独列出 Steam 规则并强制 Steam 下载 CDN 走直连，解决 Steam 下载 CDN 定位到国外的问题，确保 Steam 下载流量不走代理；  
@@ -36,8 +41,7 @@
 * 国外域名和 IP 使用远端节点服务器的 DNS 进行解析，取得最佳解析结果；  
 * 国内域名返回真实 IP，国外域名返回 Fake-IP；
 * 增加若干冷门域名规则（互动对战平台、猫眼浏览器、蓝点网、EA Desktop 下载 CDN 等），绝无副作用。具体内容详见 Rule\Custom_Direct.list 文件）;  
-* 无需手搓配置，每日定时自动更新上游规则，一次设置即可长期无人值守，无需反复折腾；  
-* 增加更多的节点区域分组（英国、加拿大等）；    
+* 无需手搓配置，每日定时自动更新上游规则，一次设置即可长期无人值守，无需反复折腾；   
 * 尽力实现海外下载流量强制直连（相关规则完善中）；  
 * 广告屏蔽功能（可选）  
 
