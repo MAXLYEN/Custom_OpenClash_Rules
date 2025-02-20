@@ -10,7 +10,7 @@
 终结所有错误设置！让稀奇古怪的套娃设置方法见鬼去吧！  
 
 手把手嘴对嘴指导你将 OpenClash 设置为效率、安全和便利三者兼顾的完美状态，零基础小白也能轻松看懂。  
-按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程，搭配本仓库的[订阅模板](https://raw.githubusercontent.com/LIMINGRUIQAQ/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)对 OpenClash 进行设置，仅依靠 OpenClash 自身，无需套娃其他工具，即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无第三方插件的广告拦截，并且完美兼容 IPv6。  
+按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程，搭配本仓库的[订阅模板](https://raw.githubusercontent.com/MAXLYEN/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)对 OpenClash 进行设置，仅依靠 OpenClash 自身，无需套娃其他工具，即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无第三方插件的广告拦截，并且完美兼容 IPv6。  
 
 欢迎 star ！  
 
@@ -51,4 +51,4 @@ https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置教�
 教程非常详尽，只需按部就班设置即可，有手就行！  
 
 此处提供自定义订阅模板的单独下载地址：  
-https://raw.githubusercontent.com/LIMINGRUIQAQ/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini
+https://raw.githubusercontent.com/MAXLYEN/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini
