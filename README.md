@@ -1,55 +1,122 @@
-<h1 align="center">OpenClash 保姆级设置教程<br>&<br>个人自用全分组订阅转换模板</h1>
+<h1 align="center">个人自用 OpenClash 全分组订阅转换模板</h1>
 
 <p align="center">
-   <img src="https://img.shields.io/github/stars/Aethersailor/Custom_OpenClash_Rules?style=for-the-badge&logo=github" alt="GitHub stars">
+  <a href="https://github.com/MAXLYEN/Custom_OpenClash_Rules/stargazers"><img src="https://img.shields.io/github/stars/MAXLYEN/Custom_OpenClash_Rules?style=flat-square&logo=github" alt="stars"></a>
+  <a href="https://github.com/MAXLYEN/Custom_OpenClash_Rules/commits/main"><img src="https://img.shields.io/github/last-commit/MAXLYEN/Custom_OpenClash_Rules?style=flat-square" alt="last commit"></a>
+  <img src="https://img.shields.io/badge/ruleset-208-blue?style=flat-square" alt="ruleset">
+  <img src="https://img.shields.io/badge/策略组-55-blue?style=flat-square" alt="groups">
 </p>
 
+<p align="center">
+  Fork 自 <a href="https://github.com/Aethersailor/Custom_OpenClash_Rules">Aethersailor/Custom_OpenClash_Rules</a>，在其基础上做了个性化定制
+</p>
 
-## 关于本仓库 
-可能是目前全网最强的 [OpenClash](https://github.com/vernesong/OpenClash) 保姆级图文教程和订阅转换模板，秒杀一切教程贴！  
-终结所有错误设置！让稀奇古怪的套娃设置方法见鬼去吧！  
+---
 
-手把手嘴对嘴指导你将 OpenClash 设置为效率、安全和便利三者兼顾的完美状态，零基础小白也能轻松看懂。  
-按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程，搭配本仓库的[订阅模板](https://raw.githubusercontent.com/MAXLYEN/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)对 OpenClash 进行设置，仅依靠 OpenClash 自身，无需套娃其他工具，即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无第三方插件的广告拦截，并且完美兼容 IPv6。  
+## 关于本仓库
 
-欢迎 star ！  
+这是一份**个人自用**的 OpenClash 订阅转换模板，特点是全英文分组、无 Emoji 图标，规则碎片主要引用自本人维护的 [Openclash-Rule](https://github.com/MAXLYEN/Openclash-Rule) 规则库，并以 GeoSite / GeoIP 作为兜底补漏。
 
-## 更新  
-本仓库模板包含的规则均为引用的上游规则碎片，上游规则更新与本仓库模板的更新没有直接关系  
+上游项目提供了非常完整的 OpenClash 设置教程，本模板的使用方式与之一致，设置步骤请直接参考上游 Wiki：
 
-2026.03.28
+**[OpenClash 设置教程（上游 Wiki）](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置教程)**
 
-修改并补充分流规则
+本模板下载地址：
 
-2025.01.01
-
-修改规则顺序，增加分流规则，提供更细化的分流规则
-
-2024.08.02
-
-修改模板全英文化， 去除所有Emoji图标，为Glados机场优化模板
-
-
-## 本仓库教程及订阅转换模板介绍
-本仓库的订阅转换模板Fork来自Aethersailod的订阅模板基础上进行了个性化定制。
-以下特性涉及的设置需要按照本仓库 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的教程对 OpenClash 进行配置才可以实现：  
-* 无需搭配其他插件，实现 DNS 防泄露；  
-* 基于 ACL4SSR_Online_Full 全分组规则，将大部分规则碎片替换成 [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 的规则文件，域名分流信息极为全面，增加更多策略组，覆盖大多数日常使用环境，无需自己折腾；  
-* 支持节点按地区分类测速优选；  
-* 媒体服务（Youtube、Netflix、Disney+ 等）走指定区域测速选优或指定节点，特定网站（电报、ChatGPT 等）走指定区域节点测速选优或指定节点；  
-* 单独列出 Steam 规则并强制 Steam 下载 CDN 走直连，解决 Steam 下载 CDN 定位到国外的问题，确保 Steam 下载流量不走代理；  
-* 国内域名和 IP 绕过 Clash 内核，提升访问速度和下载性能，并采用运营商 DNS 解析取得最佳解析结果；
-* 国外域名和 IP 使用远端节点服务器的 DNS 进行解析，取得最佳解析结果；  
-* 国内域名返回真实 IP，国外域名返回 Fake-IP；
-* 增加若干冷门域名规则（互动对战平台、猫眼浏览器、蓝点网、EA Desktop 下载 CDN 等），绝无副作用。具体内容详见 Rule\Custom_Direct.list 文件）;  
-* 无需手搓配置，每日定时自动更新上游规则，一次设置即可长期无人值守，无需反复折腾；   
-* 尽力实现海外下载流量强制直连（相关规则完善中）；  
-* 广告屏蔽功能
-
-## 使用方法  
-准备好你的订阅链接，然后按照本仓库 [Wiki 中的图文教程](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置教程)对 OpenClash 进行设置程，教程中已包括了本仓库订阅转换模板的使用方法：  
-https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置教程  
-教程非常详尽，只需按部就班设置即可，有手就行！  
-
-此处提供自定义订阅模板的单独下载地址：  
+```
 https://raw.githubusercontent.com/MAXLYEN/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini
+```
+
+---
+
+## 与上游的差异
+
+| 项 | 上游 | 本模板 |
+|---|---|---|
+| 分组命名 | 中文 + Emoji | 全英文，无 Emoji |
+| 规则来源 | GeoSite / GeoIP 为主 | 自维护规则库为主，GeoSite / GeoIP 兜底 |
+| 地区分组 | 6 个 | 8 个常用 + 27 个备用（注释状态，取消注释即可启用） |
+| 专项分组 | — | 新增 PT、Instant Messaging、Talkatone、Cryptocurrency、UKNet、EUNet 等 |
+| 规则文件 | 域名与 IP 混合 | 按平台成对拆分为 `_Domain` / `_IP` |
+
+---
+
+## 主要特性
+
+以下部分特性需按上游 Wiki 完成 OpenClash 配置后才能生效。
+
+**DNS 防泄漏** —— 无需搭配其他插件。国内域名返回真实 IP 并用运营商 DNS 解析，国外域名返回 Fake-IP 并用节点服务器 DNS 解析，各自取得最佳解析结果。
+
+**国内流量绕过内核** —— 国内域名和 IP 直连，提升访问速度与下载性能。
+
+**Steam 下载强制直连** —— 单独列出 Steam 规则，并将 `SteamCN`、`Steam_CDN` 排在 `GEOSITE,steam` 之前，解决 Steam 下载 CDN 定位到国外的问题。
+
+**按地区测速优选** —— 节点按地区自动分类并测速选优。正则采用 `\bXX[-_ ]?\d*\b` 词边界写法，可正确匹配 `AU` / `AU1` / `AU-01`，不会把 `AUTO` 误判为澳洲节点、不会把节点名中的 `100GB` 误判为英国节点。
+
+**媒体与专项分流** —— Netflix、Disney+、YouTube、Emby 等媒体服务，以及 Telegram、ChatGPT、Claude 等特定站点，均可指定区域测速选优或固定节点。
+
+**交易所固定落地** —— Binance、Bybit 走欧洲节点，OKX 走 Cryptocurrency 组，避免交易所因出口 IP 归属地变动触发风控。
+
+**PT 独立分组** —— 候选中刻意不包含 `Proxy` 与 `Auto-Test` 两个会自动切换节点的分组，因为 PT 做种与下载需长期固定同一出口 IP，节点漂移可能被 tracker 判定异常。
+
+**规则源分档更新** —— 金融、AI 平台、私人定制规则走 raw 地址、1 小时间隔（无 CDN 缓存，改动即时生效）；其余公共规则走 jsdelivr、8 小时间隔（国内可达性更好，降低软路由负担）。
+
+**广告拦截** —— 配合 Dnsmasq 实现，无需第三方插件。
+
+**完美兼容 IPv6**，规则每日自动更新，一次设置长期无人值守。
+
+---
+
+## 规则检索顺序
+
+整体遵循**由精确到泛化**：
+
+```
+内网直连 → 广告拦截 → 金融 / 虚拟货币 → 国内直连
+  → 平台专属（自维护 list + GeoSite 兜底）
+  → 泛分类（category-games / category-communication / category-entertainment）
+  → 地区兜底（HK / JP）
+  → gfw → 国内兜底 → FINAL
+```
+
+**GeoSite / GeoIP 作为兜底而非优先。** 平台类 GeoSite 一律排在同组 list 之后，由自维护规则主导匹配。这样做是因为 GeoSite 分类粒度较粗，一个大类常横跨多个专属组 —— 例如 `category-communication` 包含 Telegram、`category-games` 包含 Steam 与任天堂，前置会直接架空这些平台的专属分组。同时 GeoSite 由社区维护、内容变动无通知，前置等于把分流主导权交给外部数据源。
+
+三类例外保持前置：`private` 内网、国内直连类（`google-cn` / `games@cn` / 游戏平台下载 / 公共 tracker）、`gfw` 与 `cn` 全局兜底。
+
+> 模板中带「必须排在…之前」注释的行存在顺序依赖，调整位置前请先阅读该注释。
+
+---
+
+## 更新记录
+
+模板包含的规则均为引用的上游规则碎片，上游规则的更新与本模板的更新没有直接关系。
+
+**2026.08.04**
+- 全部 ruleset 补充 `clash-classic:` 前缀，修复因 behavior 未声明导致 `DOMAIN-SUFFIX` / `DOMAIN` 规则被整体丢弃的问题
+- GeoSite / GeoIP 调整为兜底定位，补全至 41 条分类
+- 修正 6 处检索顺序问题，消除 5 处死规则
+- 重写节点正则，修复 `AU`→`AUTO`、`GB`→`100GB`、`新`→`新北` 等误匹配
+- 规则文件按平台拆分为 `_Domain` / `_IP` 成对结构
+- 新增 PT、Instant Messaging、Social Media、Talkatone 分组
+- 健康检查地址改为 `cp.cloudflare.com/generate_204`
+
+**2026.03.28** 修改并补充分流规则
+
+**2025.01.01** 修改规则顺序，增加分流规则，提供更细化的分流规则
+
+**2024.08.02** 模板全英文化，去除所有 Emoji 图标，为 GLaDOS 机场优化模板
+
+完整变更说明见 [CHANGELOG.md](CHANGELOG.md)。
+
+---
+
+## 相关项目
+
+- [MAXLYEN/Openclash-Rule](https://github.com/MAXLYEN/Openclash-Rule) —— 本模板引用的分流规则库
+- [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules) —— 上游项目，提供完整的 OpenClash 设置教程
+- [vernesong/OpenClash](https://github.com/vernesong/OpenClash) —— OpenClash 本体
+- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) —— 部分规则碎片来源
+
+## 致谢
+
+感谢 [Aethersailor](https://github.com/Aethersailor) 的订阅模板与设置教程，本仓库在其基础上定制而成。
